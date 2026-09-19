@@ -39,17 +39,17 @@ def Features(flows):
                     b_sec = 0
                     
      
-                print("SRC_IP:",key[0],key[2])
-                print("DST_IP:",key[1],key[3])
-                print("PROTOCOL:",key[4])
-                print("Packets:", len(val))
-                print("Duration:",duration)
-                print("Packet/sec:", p_sec)
-                print("Byte/sec:", b_sec)
-                print("Avarage Packets Size:",total_bytes /len(val))
-                print("Total Bytes:",total_bytes )
-                print("Max Packet Size",LgPacket)
-                print("Min Packet Size",MinPacket)
+                # print("SRC_IP:",key[0],key[2])
+                # print("DST_IP:",key[1],key[3])
+                # print("PROTOCOL:",key[4])
+                # print("Packets:", len(val))
+                # print("Duration:",duration)
+                # print("Packet/sec:", p_sec)
+                # print("Byte/sec:", b_sec)
+                # print("Avarage Packets Size:",total_bytes /len(val))
+                # print("Total Bytes:",total_bytes )
+                # print("Max Packet Size",LgPacket)
+                # print("Min Packet Size",MinPacket)
                 
                 
                 flow = {
@@ -77,9 +77,9 @@ def Features(flows):
                
                 
                 
-                for p in val:
-                    print("         ",p["src_ip"],p["src_port"],"-->",p["dst_ip"],p["dst_port"],p["size"])
+                # for p in val:
+                #     print("         ",p["src_ip"],p["src_port"],"-->",p["dst_ip"],p["dst_port"],p["size"])
     
-                print("")
+                # print("")
     f = pd.DataFrame(flws)
-    f.to_csv("tmp.csv",index=False)               
+    f.to_csv("data.csv",index=False)               
